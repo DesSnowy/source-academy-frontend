@@ -30,6 +30,7 @@ export enum SideContentType {
   missionMetadata = 'mission_metadata',
   mobileEditor = 'mobile_editor',
   mobileEditorRun = 'mobile_editor_run',
+  popularVoteLeaderboard = 'popular_vote_leaderboard',
   sourcereel = 'sourcereel',
   substVisualizer = 'subst_visualiser',
   testcases = 'testcases',

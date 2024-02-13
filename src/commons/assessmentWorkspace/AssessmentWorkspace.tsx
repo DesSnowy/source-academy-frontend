@@ -421,6 +421,7 @@ const AssessmentWorkspace: React.FC<AssessmentWorkspaceProps> = props => {
     ];
 
     if (isContestVoting) {
+      console.log(question);
       tabs.push(
         {
           label: `Contest Voting Briefing`,
@@ -453,6 +454,17 @@ const AssessmentWorkspace: React.FC<AssessmentWorkspaceProps> = props => {
             />
           ),
           id: SideContentType.scoreLeaderboard
+        },
+        {
+          label: 'Popular Vote Leaderboard',
+          iconName: IconNames.CHART,
+          body: (
+            <SideContentContestLeaderboard
+              handleContestEntryClick={handleContestEntryClick}
+              orderedContestEntries={(question as IContestVotingQuestion)?.popularVoteLeaderboard ?? []}
+            />
+          ),
+          id: SideContentType.popularVoteLeaderboard
         }
       );
     } else {

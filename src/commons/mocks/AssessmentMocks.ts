@@ -874,6 +874,18 @@ const mockContestEntryQuestion: Array<IContestVotingQuestion> = [
         answer: { code: 'function leaderboard_test() { return true; }' }
       }
     ],
+    popularVoteLeaderboard : [
+      {
+        submission_id: 1,
+        student_name: 'student_1',
+        answer: { code: "display('leaderboard test')" }
+      },
+      {
+        submission_id: 2,
+        student_name: 'student_2',
+        answer: { code: 'function leaderboard_test() { return true; }' }
+      }
+    ],
     library: mockLibrary,
     blocking: false
   }
